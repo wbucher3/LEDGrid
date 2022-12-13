@@ -6,7 +6,7 @@
 
 <main>
   <div class="led-grid">
-    <div *ngFor="let dot of ledCount; index as i">
+    <div *ngFor="let dot of ledList; index as i">
       <div class="individual-led" (click)="ledClick(dot, i)" [style.background-color]="getColors(dot)">
       </div>
     </div>
